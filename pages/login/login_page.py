@@ -1,4 +1,4 @@
-from pages.locators.login_locators import LoginPageLocators
+from pages.login.login_locators import LoginPageLocators
 
 class LoginPage:
     def __init__(self, page):
