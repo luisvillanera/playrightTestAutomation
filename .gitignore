@@ -18,7 +18,8 @@ assets/
 
 # IDEs y editores
 .idea/
-.vscode/
+.vscode/*
+!.vscode/settings.json
 *.swp
 *.swo
 *~
