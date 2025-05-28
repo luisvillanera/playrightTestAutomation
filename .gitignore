@@ -16,6 +16,15 @@ ENV/
 report.html
 assets/
 
+# Node
+node_modules/
+dist/
+*.log
+npm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
 # IDEs y editores
 .idea/
 .vscode/*
