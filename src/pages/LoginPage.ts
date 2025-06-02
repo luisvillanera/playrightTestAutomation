@@ -21,7 +21,7 @@ export class LoginPage extends BasePage implements ILoginPage {
   }
 
   async navigate(): Promise<void> {
-    await this.page.goto('/practice-test-login/');
+    await this.page.goto('/practice-test-login');
     await this.waitForPageLoad();
   }
 

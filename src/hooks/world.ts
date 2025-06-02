@@ -6,7 +6,10 @@ let page: Page;
 
 Before(async () => {
   browser = await chromium.launch({ headless: false });
-  page = await browser.newPage();
+  const context = await browser.newContext({
+    baseURL: 'https://practicetestautomation.com'
+  });
+  page = await context.newPage();
 });
 
 After(async () => {
