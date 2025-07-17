@@ -33,84 +33,36 @@ Este proyecto utiliza [Playwright](https://playwright.dev/) y TypeScript para la
 
 ## Ejecución de Pruebas
 
-Puedes ejecutar los tests de diferentes maneras según tus necesidades. A continuación se detallan los comandos más importantes:
+Todas las pruebas ahora se ejecutan usando Cucumber (BDD).
 
-### 1. Ejecutar todas las pruebas automatizadas
+### Ejecutar todas las pruebas BDD
 
-Este comando ejecuta todos los tests definidos en la carpeta `tests/` usando Playwright:
-```bash
-npm test
-```
-
-### 2. Ejecutar pruebas en modo interactivo (UI)
-
-Abre la interfaz visual de Playwright Test Runner, donde puedes seleccionar y depurar tests:
-```bash
-npm run test:ui
-```
-
-### 3. Ejecutar pruebas con navegador visible (headed)
-
-Ejecuta los tests mostrando el navegador (útil para depuración visual):
-```bash
-npm run test:headed
-```
-
-### 4. Ejecutar pruebas BDD con Cucumber
-
-Ejecuta los tests definidos en archivos `.feature` usando Cucumber:
 ```bash
 npm run test:cucumber
 ```
 
-### 5. Ver el reporte de pruebas
+Esto ejecutará todos los escenarios definidos en los archivos `.feature` dentro de la carpeta `src/features/`.
 
-Abre un reporte HTML interactivo con los resultados de la última ejecución:
+### Ejecutar un feature específico
+
 ```bash
-npm run report
+npx cucumber-js src/features/home.feature
 ```
+
+O para login:
+
+```bash
+npx cucumber-js src/features/login.feature
+```
+
+### Agregar nuevas pruebas
+1. Crea un nuevo archivo `.feature` en `src/features/`.
+2. Crea o edita el archivo de steps correspondiente en `src/steps/`.
+3. Si es necesario, crea o actualiza el Page Object en `src/pages/` y los locators en `src/locators/`.
 
 ---
 
-**Nota:**
-- Puedes personalizar los comandos en el archivo `package.json`.
-- Si es la primera vez que ejecutas los tests, asegúrate de haber instalado los navegadores con `npx playwright install`.
-
-## Ejecutar tests específicos
-
-Además de los comandos generales con `npm`, puedes ejecutar archivos o pruebas individuales usando `npx playwright test`. Esto te da mayor flexibilidad para correr solo los tests que te interesan.
-
-### Ejecutar solo el test de login
-
-```bash
-npx playwright test tests/login/login.spec.ts
-```
-
-### Ejecutar solo el test de home
-
-```bash
-npx playwright test tests/home/home.spec.ts
-```
-
-### Ejecutar un test específico dentro de un archivo
-
-Puedes ejecutar un test puntual usando el flag `-g` seguido del nombre (o parte del nombre) del test:
-
-```bash
-npx playwright test -g "título correcto"
-```
-
-O para un test específico de login:
-
-```bash
-npx playwright test -g "credenciales válidas"
-```
-
----
-
-**¿Cuál es la diferencia entre npm y npx aquí?**
-- Los comandos `npm test` o `npm run ...` ejecutan scripts predefinidos en el archivo `package.json` y suelen correr todos los tests.
-- Usar `npx playwright test` te permite ejecutar archivos o pruebas individuales de forma directa y flexible.
+**Nota:** Ya no se usan archivos `.spec.ts` en la carpeta `tests/`. Todo el flujo de pruebas está basado en Cucumber y Gherkin.
 
 ## Ejemplo de Prueba
 
@@ -139,3 +91,21 @@ Guarda este ejemplo en `tests/home.spec.ts`.
 ---
 
 ¡Contribuciones y sugerencias son bienvenidas! 
+
+## Reporte de ejecución en la web
+
+Puedes generar y abrir un reporte HTML interactivo de tus pruebas de Cucumber siguiendo estos pasos:
+
+1. Ejecuta los tests para generar el reporte en formato JSON:
+   ```bash
+   npm run test:cucumber
+   ```
+
+2. Genera y abre el reporte HTML en tu navegador:
+   ```bash
+   npm run report:cucumber
+   ```
+
+Esto abrirá automáticamente el reporte en tu navegador, donde podrás ver el detalle de cada escenario y step ejecutado.
+
+> El reporte se genera en la carpeta `reports/cucumber_report.html`. 

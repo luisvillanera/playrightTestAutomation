@@ -1,0 +1,365 @@
+[
+  {
+    "description": "  Como visitante\n  Quiero ver la página principal correctamente\n  Para asegurarme de que la web está disponible",
+    "elements": [
+      {
+        "description": "",
+        "id": "página-principal;verificar-el-título-de-la-página-principal",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verificar el título de la página principal",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 245314000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que estoy en la página principal",
+            "match": {
+              "location": "src\\steps\\home.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2125821199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "el título de la página debe ser \"Practice Test Automation\"",
+            "match": {
+              "location": "src\\steps\\home.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4398499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 97533999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "página-principal",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Página principal",
+    "tags": [],
+    "uri": "src\\features\\home.feature"
+  },
+  {
+    "description": "  Como usuario del sistema\n  Quiero poder iniciar sesión\n  Para acceder a mi cuenta",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-en-la-aplicación;login-exitoso-con-credenciales-válidas",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Login exitoso con credenciales válidas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 208662200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que estoy en la página de login",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2265094100
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "usuario",
+                      "contraseña"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "student",
+                      "Password123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 9,
+            "name": "ingreso las credenciales",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 858012600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "hago clic en el botón de login",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "debería ver un mensaje de éxito",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16030400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 82601399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-en-la-aplicación;login-fallido-con-contraseña-incorrecta",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Login fallido con contraseña incorrecta",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 206496200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "que estoy en la página de login",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2365718300
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "usuario",
+                      "contraseña"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "student",
+                      "password_incorrecta"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 17,
+            "name": "ingreso las credenciales",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40164500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "hago clic en el botón de login",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "no debería ver un mensaje de éxito",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2640799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 91773100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-en-la-aplicación;login-fallido-con-usuario-inválido",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Login fallido con usuario inválido",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 209848200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "que estoy en la página de login",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2382998700
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "usuario",
+                      "contraseña"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "usuario_invalido",
+                      "Password123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 25,
+            "name": "ingreso las credenciales",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36866900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "hago clic en el botón de login",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "no debería ver un mensaje de éxito",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2223799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 78271099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-en-la-aplicación",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Login en la aplicación",
+    "tags": [],
+    "uri": "src\\features\\login.feature"
+  }
+]
