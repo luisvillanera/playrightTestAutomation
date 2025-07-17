@@ -94,18 +94,25 @@ Guarda este ejemplo en `tests/home.spec.ts`.
 
 ## Reporte de ejecución en la web
 
-Puedes generar y abrir un reporte HTML interactivo de tus pruebas de Cucumber siguiendo estos pasos:
+Después de ejecutar tus pruebas con:
+```bash
+npm run test:cucumber
+```
+se genera el archivo de reporte HTML en:
+```
+reports/cucumber_report.html
+```
 
-1. Ejecuta los tests para generar el reporte en formato JSON:
-   ```bash
-   npm run test:cucumber
-   ```
+### Cómo abrir el reporte en tu navegador
 
-2. Genera y abre el reporte HTML en tu navegador:
-   ```bash
-   npm run report:cucumber
-   ```
+**Opción recomendada (línea de comandos):**
 
-Esto abrirá automáticamente el reporte en tu navegador, donde podrás ver el detalle de cada escenario y step ejecutado.
+En PowerShell o CMD de Windows, ejecuta:
+```bash
+start reports/cucumber_report.html
+```
+Esto abrirá el reporte automáticamente en tu navegador predeterminado.
 
-> El reporte se genera en la carpeta `reports/cucumber_report.html`. 
+---
+
+Puedes ver todos los escenarios, pasos y resultados de tus pruebas de forma visual y clara. 

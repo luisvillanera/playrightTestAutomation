@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 245314000
+              "duration": 251007399
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 8,
             "name": "que estoy en la página principal",
             "match": {
-              "location": "src\\steps\\home.steps.ts:8"
+              "location": "src\\steps\\home.steps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 2125821199
+              "duration": 2144585400
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 9,
             "name": "el título de la página debe ser \"Practice Test Automation\"",
             "match": {
-              "location": "src\\steps\\home.steps.ts:14"
+              "location": "src\\steps\\home.steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 4398499
+              "duration": 4683199
             }
           },
           {
@@ -48,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 97533999
+              "duration": 105013500
             }
           }
         ],
@@ -78,7 +78,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 208662200
+              "duration": 223327600
             }
           },
           {
@@ -91,7 +91,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2265094100
+              "duration": 2286671099
             }
           },
           {
@@ -116,12 +116,9 @@
             "keyword": "When ",
             "line": 9,
             "name": "ingreso las credenciales",
-            "match": {
-              "location": "src\\steps\\login.steps.ts:14"
-            },
             "result": {
-              "status": "passed",
-              "duration": 858012600
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
@@ -133,8 +130,8 @@
               "location": "src\\steps\\login.steps.ts:19"
             },
             "result": {
-              "status": "passed",
-              "duration": 138300
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -146,8 +143,8 @@
               "location": "src\\steps\\login.steps.ts:23"
             },
             "result": {
-              "status": "passed",
-              "duration": 16030400
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -155,7 +152,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 82601399
+              "duration": 115015800
             }
           }
         ],
@@ -174,7 +171,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 206496200
+              "duration": 255173099
             }
           },
           {
@@ -187,7 +184,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2365718300
+              "duration": 3149360599
             }
           },
           {
@@ -212,12 +209,9 @@
             "keyword": "When ",
             "line": 17,
             "name": "ingreso las credenciales",
-            "match": {
-              "location": "src\\steps\\login.steps.ts:14"
-            },
             "result": {
-              "status": "passed",
-              "duration": 40164500
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
@@ -229,8 +223,8 @@
               "location": "src\\steps\\login.steps.ts:19"
             },
             "result": {
-              "status": "passed",
-              "duration": 82199
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -242,8 +236,8 @@
               "location": "src\\steps\\login.steps.ts:28"
             },
             "result": {
-              "status": "passed",
-              "duration": 2640799
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -251,7 +245,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 91773100
+              "duration": 81949199
             }
           }
         ],
@@ -270,7 +264,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 209848200
+              "duration": 221630100
             }
           },
           {
@@ -283,7 +277,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2382998700
+              "duration": 2483763600
             }
           },
           {
@@ -308,12 +302,9 @@
             "keyword": "When ",
             "line": 25,
             "name": "ingreso las credenciales",
-            "match": {
-              "location": "src\\steps\\login.steps.ts:14"
-            },
             "result": {
-              "status": "passed",
-              "duration": 36866900
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
@@ -325,8 +316,8 @@
               "location": "src\\steps\\login.steps.ts:19"
             },
             "result": {
-              "status": "passed",
-              "duration": 77699
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -338,8 +329,8 @@
               "location": "src\\steps\\login.steps.ts:28"
             },
             "result": {
-              "status": "passed",
-              "duration": 2223799
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -347,7 +338,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 78271099
+              "duration": 88782600
             }
           }
         ],
